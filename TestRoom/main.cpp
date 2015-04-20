@@ -1,14 +1,22 @@
 
 #include <iostream>
-#include <vector>
+#include <map>
+#include <string>
 
 
 int main(){
-  std::vector<int> va;
+  std::map<int, std::string> map_test;
 
-  va.emplace_back(10);
+  int ID_test = 0;
 
-  std::cout << va.at(0) << std::endl;
+  std::string str_temp;
+  str_temp = "Visual Studio is God";
+
+  map_test.insert(std::make_pair(ID_test, str_temp));
+
+  auto it_temp = map_test.find(ID_test);
+
+  std::cout << it_temp->second << std::endl;
 
   return 0;
 }
