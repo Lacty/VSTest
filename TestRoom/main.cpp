@@ -6,10 +6,9 @@
 int main(){
   std::vector<int> va;
 
-  for (int i = 0; i < 10; ++i) {
-    va.emplace_back(i);
-    std::cout << va.at(i) << std::endl;
-  }
+  va.emplace_back(10);
+
+  std::cout << va.at(0) << std::endl;
 
   return 0;
 }
